@@ -1,194 +1,353 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
+
+<head> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+
+
+
+@viewport {
+
+width:device-width;
+
+zoom:1.0;
+
+}
+
+	
+
+body {
+
+text-align:center;
+
+font-family:georgia;
+
+background:#7a004c;
+
+padding-bottom:5%;
+
+}
+
+
+
+i {
+
+text-align:center;
+
+}
+
+
+
+input {
+
+background:#7a004c;
+
+color:white;
+
+border-radius:30px;
+
+border-color:#7a004c;
+
+font-size:15px;
+
+padding:5px;
+
+margin-left:5px;
+
+margin-top:5px;
+
+
+
+}
+
+
+
+
+
+input:hover {
+
+background:#ad006c;
+
+transition:0.3s;
+
+}
+
+
+
+
+
+div {
+
+justify-content: center;
+
+width: 100%;
+
+align-items:center;
+
+}
+
+
+
+span {
+
+margin-left: 0.5em;
+
+font-family:verdana;
+
+font-size:25px;
+
+text-wrap:wrap;
+
+}
+
+
+
+h1 {
+
+font-family:georgia;
+
+color:#7a004c;
+
+}
+
+ 
+
+#cred {
+
+font-size:0.8em;
+
+}
+
+
+
+#post {
+
+    background:white;
+
+    width:75%;
+
+    padding:2%;
+
+    border-radius:2%;
+
+        position: fixed;
+
+        top: 50%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+}
+
+
+
+a {
+
+    color:#caff49;
+
+    text-decoration:none;
+
+}
+
+
+
+a:hover {
+
+    color:#47ab00;
+
+    transition:0.3s;
+
+}
+
+
+
+p {
+
+    font-size:0.9em;
+
+}
+
+
+
+#footer {
+
+    position:fixed;
+
+      left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  text-align:center;
+
+  color:white;
+
+  padding-bottom:0.5em;
+
+}
+
+
+
+
+
+</style>
+
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">@viewport {</p>
-<p class="p1">width:device-width;</p>
-<p class="p1">zoom:1.0;</p>
-<p class="p1">}</p>
-<p class="p2"><span class="Apple-tab-span">	</span></p>
-<p class="p1">body {</p>
-<p class="p1">text-align:center;</p>
-<p class="p1">font-family:georgia;</p>
-<p class="p1">background:#7a004c;</p>
-<p class="p1">padding-bottom:5%;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">i {</p>
-<p class="p1">text-align:center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">input {</p>
-<p class="p1">background:#7a004c;</p>
-<p class="p1">color:white;</p>
-<p class="p1">border-radius:30px;</p>
-<p class="p1">border-color:#7a004c;</p>
-<p class="p1">font-size:15px;</p>
-<p class="p1">padding:5px;</p>
-<p class="p1">margin-left:5px;</p>
-<p class="p1">margin-top:5px;</p>
-<p class="p2"><br></p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">input:hover {</p>
-<p class="p1">background:#ad006c;</p>
-<p class="p1">transition:0.3s;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">div {</p>
-<p class="p1">justify-content: center;</p>
-<p class="p1">width: 100%;</p>
-<p class="p1">align-items:center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">span {</p>
-<p class="p1">margin-left: 0.5em;</p>
-<p class="p1">font-family:verdana;</p>
-<p class="p1">font-size:25px;</p>
-<p class="p1">text-wrap:wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">h1 {</p>
-<p class="p1">font-family:georgia;</p>
-<p class="p1">color:#7a004c;</p>
-<p class="p1">}</p>
-<p class="p2"><span class="Apple-converted-space"> </span></p>
-<p class="p1">#cred {</p>
-<p class="p1">font-size:0.8em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#post {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width:75%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding:2%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius:2%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>top: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>left: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>transform: translate(-50%, -50%);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">a {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:#caff49;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration:none;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color:#47ab00;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transition:0.3s;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">p {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size:0.9em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">#footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>position:fixed;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>color:white;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padding-bottom:0.5em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;div id="post"&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1">&lt;h1&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;</p>
-<p class="p1">Sherlock Holmes Name Generator &lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;p&gt; Ever wondered what your name would be in a Sherlock Holmes story? Wonder no more! Now you can have one generated for you, picked from the first and last names of every* character from canon.&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;input type="button" id="Masc" value="Masculine" onclick="MascNames(); lastValue()" /&gt;</p>
-<p class="p1">&lt;input type="button" id="Fem" value="Feminine" onclick="FemNames(); lastValue()" /&gt;</p>
-<p class="p1">&lt;input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); lastValue()" /&gt;</p>
-<p class="p1">&lt;div&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;p&gt;Your Sherlock Holmes name is...&lt;/p&gt;</p>
-<p class="p1">&lt;span id="firstname" &gt;&lt;/span&gt;&lt;span id="lastname" &gt;&lt;/span&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;p id="sub"&gt;&lt;i&gt;*There is always the possibility that I have overlooked a name! Use at your own discretion. &lt;/i&gt;&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">&lt;div id="footer"&gt;</p>
-<p class="p1">&lt;p id="cred"&gt; Made with love by &lt;a href="/"&gt;@julienbakerstreet&lt;/a&gt; &lt;i style="color:#caff49;" class="fa fa-heart"&gt;&lt;/i&gt; &lt;/p&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">function GetValue()</p>
-<p class="p1">{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>var neutral = "Abdullah Abe Abel Achmet Adelbert Alec Alexander Alexander Hamilton Alexis Aloysius Andrew Anthony Archie Arthur Athelney Augusto Augustus Baldy Barney Bartholomew Basil Beppo Bert Bill Billy Birdy Bob Bromley Bruce Carlo Cathcart Cecil Charles Charlie Culverton Cyril Daulat Denis Don Juan Dost Douglas Duncan Eduardo Elias Enoch Eustace Ezekiah Fairdale Fitzroy Francis Frank Fred Fritz Gennaro George Giuseppe Godfrey Grant Grice Grimesby Hall Hans Harold Harry Harvey Heath Hector Henri Henry Herman Hill Hilton Horace Hosmer Howard Hugh Hugo Hynes Ian Ikey Isa J. Neil Jabez Jack Jacob James Jasper Jefferson Jem Jephro Jeremiah Jeremy Jimmie Jimmy John Johnny Jonas Jonathan José Joseph Joshua Josiah Joyce Jules Lal Langdale Leon Leonardo Leslie Louis Lysander Mahomet Marlow Mike Miles Moore Mordecai Morse Mortimer Mycroft Nathan Ned Negretto Neville Norman Oscar Owen Patrick Paul Penrose Percy Peter Philip Pietro Pope Ralph Ray Reginald Robert Rodger Ronald Rueben Sam Sandy Scott Sebastian Sherlock Shinwell Silas Simon Spence Spencer Stanley Steve Ted Teddy Thaddeus Theophilus Thorneycroft Tiger Tito Tobias Tom Trevor Valentine Victor Vincent White Wilhelm William Willoughby Wilson Agatha Ali Alice Alicia Anna Annie Beatrice Beryl Brenda Carrie Catherine Clara Clotilde Dolores Edith Effie Eliza Elizabeth Elsie Emilia Ettie Eugenia Eva Flora Frances Grace Hatty Helen Hilda Honoria Irene Isadora Ivy Jane Janet Julia Kate Kitty Laura Lucretia Lucy Maggie Maria Marie Martha Mary Mary Jane Maud Maudie Minnie Nancy Rachel Rose Sally Sarah Sophy Susan Theresa Violet Vittoria";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var myarray = [];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>myarray = neutral.split(" ");</p>
-<p class="p1">//<span class="Apple-converted-space">    </span>var myarray= new Array("john","sherlock","irene");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var random = myarray[Math.floor(Math.random() * myarray.length)];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>//alert(random);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("firstname").innerHTML=random;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function MascNames()</p>
-<p class="p1">{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>var masc = "Abdullah Abe Abel Achmet Adelbert Alec Alexander Alexander Hamilton Alexis Aloysius Andrew Anthony Archie Arthur Athelney Augusto Augustus Baldy Barney Bartholomew Basil Beppo Bert Bill Billy Birdy Bob Bromley Bruce Carlo Cathcart Cecil Charles Charlie Culverton Cyril Daulat Denis Don Juan Dost Douglas Duncan Eduardo Elias Enoch Eustace Ezekiah Fairdale Fitzroy Francis Frank Fred Fritz Gennaro George Giuseppe Godfrey Grant Grice Grimesby Hall Hans Harold Harry Harvey Heath Hector Henri Henry Herman Hill Hilton Horace Hosmer Howard Hugh Hugo Hynes Ian Ikey Isa J. Neil Jabez Jack Jacob James Jasper Jefferson Jem Jephro Jeremiah Jeremy Jimmie Jimmy John Johnny Jonas Jonathan José Joseph Joshua Josiah Joyce Jules Lal Langdale Leon Leonardo Leslie Louis Lysander Mahomet Marlow Mike Miles Moore Mordecai Morse Mortimer Mycroft Nathan Ned Negretto Neville Norman Oscar Owen Patrick Paul Penrose Percy Peter Philip Pietro Pope Ralph Ray Reginald Robert Rodger Ronald Rueben Sam Sandy Scott Sebastian Sherlock Shinwell Silas Simon Spence Spencer Stanley Steve Ted Teddy Thaddeus Theophilus Thorneycroft Tiger Tito Tobias Tom Trevor Valentine Victor Vincent White Wilhelm William Willoughby Wilson";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var myarray = [];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>myarray = masc.split(" ");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var random = myarray[Math.floor(Math.random() * myarray.length)];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>//alert(random);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("firstname").innerHTML=random;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function FemNames()</p>
-<p class="p1">{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>var fem = "Agatha Ali Alice Alicia Anna Annie Beatrice Beryl Brenda Carrie Catherine Clara Clotilde Dolores Edith Effie Eliza Elizabeth Elsie Emilia Ettie Eugenia Eva Flora Frances Grace Hatty Helen Hilda Honoria Irene Isadora Ivy Jane Janet Julia Kate Kitty Laura Lucretia Lucy Maggie Maria Marie Martha Mary Mary Jane Maud Maudie Minnie Nancy Rachel Rose Sally Sarah Sophy Susan Theresa Violet Vittoria";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var myarray = [];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>myarray = fem.split(" ");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var random = myarray[Math.floor(Math.random() * myarray.length)];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>//alert(random);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById("firstname").innerHTML=random;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">function lastValue()</p>
-<p class="p1">{</p>
-<p class="p1"><span class="Apple-tab-span">	</span>var lastn = "Abernetty Abrahams Acton Adair Adams Addleton Adler Agar Ainstree Akbar Aldgar Aldridge Alison Allan Allen Amberley Anderson Andrews Angel Anstruther Appledore Armitage Atkinson Atwood Backwater Bain Baker Baldwin Balmoral Barclay Bardle Barelli Barker Barnes Barnicot Barrett Barrymore Barton Baskerville Bates Baxter Baynes Becher Beddington Beddoes Bellamy Bender Bennett Bernstone Beverley Bevington Biddle Bird Blaker Blessington Blondin Blount Blymer Boarder Boone Bougureau Brackenstall Brackwell Bradley Bradshaw Bradstreet Breckinridge Brewer Brooks Brown Browner Brunton Bull Burnet Burnwell Cadogan West Cairns Calhoun Cantlemere Carère Carey Carfax Carnaway Carruthers Carter Cartwright Castalotte Cenucci Chandos Charpentier Chowdar Clarendon Clay Clayton Cobb Colin Cook Coram Cormac Cornelius Corot Coventry Coxon Crabbe Croker Crosby Crowder Cubitt Cummings Cunard Cusack Cushing Damery Danton Darbyshire Davenport Dawson deBrinvilliers deCapus deMerville DeQuincey Dennis Desmond Devine Devoy Dixie Dixon Dobney Dodd Dorak Doran Dorking Downing Dowson Drebber Dubuque Dunbar Dundas Dunn Durando Eccles Edmunds Edwards Egan Elman Emsworth Ernest Etherege Eustace Evans Fairbairn Falder Farintosh Farquhar Ferguson Ferrers Ferrier Ffolliott Flowers Fordham Forrester Fournaye Fowler Frankland Fraser Freebody Garcia Garrideb Gibson Gilchrist Gladstone Gorgiana Gorot Gottsreich Sigismond von Ormstein Gower Graham Gregory Gregson Griggs Grimm Gruner Haines-Johnson Hales Harden Harding Hardy Hare Hargrave Hargreave Harker Harold Harraway Harringby Harris Harrison Hatherley Hay Moulton Hayard Hayes Hayling Hayter Hebron Henderson Higgins Hill Hobbs Hoby Holder Holdhurst Holmes Homer Hones Hope Hopley Neligan Horner Horsom Howells Hudson Hudson Hugos Hunt Hunter Huret Huxtable Hyam Hynes Jackson Jacobs James John Johnson Jones Joseph Kemball Kemp Kent Keswick Khan Kirwan Klein Klopman Knox Kratides La Rothière Lancaster Lander Lanner Larbey Lascar Latimer Lawler LeBrun LeVillard Lee Lefevre Lestrade Lesurier Leverstoke Leverton Lewis Lexington Lomax Lopez Lothman von Saxe-Meningen Lowenstein Lucas Lucca Lucknow Lynch Lyons Maberley MacKinnon MacNamara Macphail MacPherson Manders Manse Manson Marker Martin Marvin Mason Matheson Matthews Maudsley Maupertuis Maynooth McCarthy McCauley McFarlane McGinty McGregor McLaren McMurdo McPherson Meek Melas Melville Mercer Meredith Merivale Merridew Merrilow Merrow Merryweather Merton Meunier Meyer Meyers Miles Millar Milman Milner Milverton Mitton Moffat Montgomery Montpensier Moorhouse Moran Morecroft Morgan Moriarty Morland Morphy Morris Morrison Morstan Mortimer Morton Moser Mount-James Muirhead Muller Munro Murcher Murdoch Murger Murillo Murphy Murray Musgrave Neal Neill Newton Nicholson Norberton Norlett Norton o'Groats Oakshott Oberstein Oldacre Oldmore Openshaw Overton Palmer Paramore Parker Parr Patersons Patrick Patterson Pattins Peace Perkins Persano Peters Peterson Phelps Phillimore Pierrot Pike Pinkerton Pinner Pinto Pinto Pitt Pollock Pope Porter Pott Prendergast Presbury Prescott Price Pringle Pritchard Prosper Pycroft Rae Rance Ras Reilly Reilly Reynolds Richards Ricoletti Robinson Rodney Ronder Rosa Ross Roundhay Roylott Rucastle Rudge-Whitworth Rulli Ryder Sahib Saint-Clair Saltire Sandeford Sanders Sanger Saunders Savage Sawyer Scanlan Scott Selden Shafter Sherman Shlessinger Sholto Shuman Simpson Sinclair Singh Singleford Slaney Sloane Smith Smith-Mortimer Soames Somerton Southerton Spaulding Spender St. Simon Stackhurst Stamford Stanger Stangerson Staphouse Staples Stapleton Stark Starr Staunton Steiler Steiner Stendals Stephens Sterndale Stevens Stevenson Steward Stewart Stockdale Stone Stoner Stoper Straker Straubenzee Strauss Sudbury Sutherland Sutro Sutton Swain Swindon Sylvius Tangey Tarlton Tavernier Thurston Todman Toller Tregellis Tregennis Trelawney Hope Trepoff Trevelyan Trevor Turner Tuson Underwood Upwood Vamberry VanDeher VanJansen VanSeddar VanShorst Vandeleur Vanderbilt Venner Verner Vernet Vibart VonBischoff VonBork VonHerder VonHerling VonKramm VonGrafenstein VonWaldbaum Wainwright Waldron Wallenstein Walsingham Walter Walters Wardlaw Warner Warren Warrender Watson Westaway Westbury Westphail White Whitney Whittington Wiggins Wilcox Wilder Willaby Williams Williamson Willows Wilson Windibank Windigate Windle Winter Wombwell Wood Woodhouse Woodley Worthingdon Wright Youghal Zamba";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var last = [];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>last = lastn.split(" ");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>var random = last[Math.floor(Math.random() * last.length)];</p>
-<p class="p1"><span class="Apple-converted-space">       </span>//alert(random);</p>
-<p class="p1">document.getElementById("lastname").innerHTML=random;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<br>
+
+<div id="post"> 
+
+<h1><i class="fa fa-search"></i>
+
+Sherlock Holmes Name Generator <i class="fa fa-search"></i></h1>
+
+
+
+<p> Ever wondered what your name would be in a Sherlock Holmes story? Wonder no more! Now you can have one generated for you, picked from the first and last names of every* character from canon.</p>
+
+
+
+
+
+<input type="button" id="Masc" value="Masculine" onclick="MascNames(); lastValue()" />
+
+<input type="button" id="Fem" value="Feminine" onclick="FemNames(); lastValue()" />
+
+<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); lastValue()" />
+
+<div>
+
+<br>
+
+<p>Your Sherlock Holmes name is...</p>
+
+<span id="firstname" ></span><span id="lastname" ></span>
+
+</div>
+
+
+
+<p id="sub"><i>*There is always the possibility that I have overlooked a name! Use at your own discretion. </i></p>
+
+
+
+</div>
+
+<div id="footer">
+
+<p id="cred"> Made with love by <a href="/">@julienbakerstreet</a> <i style="color:#caff49;" class="fa fa-heart"></i> </p>
+
+</div>
+
+
+
+<script>
+
+function GetValue()
+
+{
+
+	var neutral = "Abdullah Abe Abel Achmet Adelbert Alec Alexander Alexander Hamilton Alexis Aloysius Andrew Anthony Archie Arthur Athelney Augusto Augustus Baldy Barney Bartholomew Basil Beppo Bert Bill Billy Birdy Bob Bromley Bruce Carlo Cathcart Cecil Charles Charlie Culverton Cyril Daulat Denis Don Juan Dost Douglas Duncan Eduardo Elias Enoch Eustace Ezekiah Fairdale Fitzroy Francis Frank Fred Fritz Gennaro George Giuseppe Godfrey Grant Grice Grimesby Hall Hans Harold Harry Harvey Heath Hector Henri Henry Herman Hill Hilton Horace Hosmer Howard Hugh Hugo Hynes Ian Ikey Isa J. Neil Jabez Jack Jacob James Jasper Jefferson Jem Jephro Jeremiah Jeremy Jimmie Jimmy John Johnny Jonas Jonathan José Joseph Joshua Josiah Joyce Jules Lal Langdale Leon Leonardo Leslie Louis Lysander Mahomet Marlow Mike Miles Moore Mordecai Morse Mortimer Mycroft Nathan Ned Negretto Neville Norman Oscar Owen Patrick Paul Penrose Percy Peter Philip Pietro Pope Ralph Ray Reginald Robert Rodger Ronald Rueben Sam Sandy Scott Sebastian Sherlock Shinwell Silas Simon Spence Spencer Stanley Steve Ted Teddy Thaddeus Theophilus Thorneycroft Tiger Tito Tobias Tom Trevor Valentine Victor Vincent White Wilhelm William Willoughby Wilson Agatha Ali Alice Alicia Anna Annie Beatrice Beryl Brenda Carrie Catherine Clara Clotilde Dolores Edith Effie Eliza Elizabeth Elsie Emilia Ettie Eugenia Eva Flora Frances Grace Hatty Helen Hilda Honoria Irene Isadora Ivy Jane Janet Julia Kate Kitty Laura Lucretia Lucy Maggie Maria Marie Martha Mary Mary Jane Maud Maudie Minnie Nancy Rachel Rose Sally Sarah Sophy Susan Theresa Violet Vittoria";
+
+    var myarray = [];
+
+    myarray = neutral.split(" ");
+
+//    var myarray= new Array("john","sherlock","irene");
+
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+
+    //alert(random);
+
+    document.getElementById("firstname").innerHTML=random;
+
+}
+
+
+
+function MascNames()
+
+{
+
+	var masc = "Abdullah Abe Abel Achmet Adelbert Alec Alexander Alexander Hamilton Alexis Aloysius Andrew Anthony Archie Arthur Athelney Augusto Augustus Baldy Barney Bartholomew Basil Beppo Bert Bill Billy Birdy Bob Bromley Bruce Carlo Cathcart Cecil Charles Charlie Culverton Cyril Daulat Denis Don Juan Dost Douglas Duncan Eduardo Elias Enoch Eustace Ezekiah Fairdale Fitzroy Francis Frank Fred Fritz Gennaro George Giuseppe Godfrey Grant Grice Grimesby Hall Hans Harold Harry Harvey Heath Hector Henri Henry Herman Hill Hilton Horace Hosmer Howard Hugh Hugo Hynes Ian Ikey Isa J. Neil Jabez Jack Jacob James Jasper Jefferson Jem Jephro Jeremiah Jeremy Jimmie Jimmy John Johnny Jonas Jonathan José Joseph Joshua Josiah Joyce Jules Lal Langdale Leon Leonardo Leslie Louis Lysander Mahomet Marlow Mike Miles Moore Mordecai Morse Mortimer Mycroft Nathan Ned Negretto Neville Norman Oscar Owen Patrick Paul Penrose Percy Peter Philip Pietro Pope Ralph Ray Reginald Robert Rodger Ronald Rueben Sam Sandy Scott Sebastian Sherlock Shinwell Silas Simon Spence Spencer Stanley Steve Ted Teddy Thaddeus Theophilus Thorneycroft Tiger Tito Tobias Tom Trevor Valentine Victor Vincent White Wilhelm William Willoughby Wilson";
+
+    var myarray = [];
+
+    myarray = masc.split(" ");
+
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+
+    //alert(random);
+
+    document.getElementById("firstname").innerHTML=random;
+
+}
+
+
+
+function FemNames()
+
+{
+
+	var fem = "Agatha Ali Alice Alicia Anna Annie Beatrice Beryl Brenda Carrie Catherine Clara Clotilde Dolores Edith Effie Eliza Elizabeth Elsie Emilia Ettie Eugenia Eva Flora Frances Grace Hatty Helen Hilda Honoria Irene Isadora Ivy Jane Janet Julia Kate Kitty Laura Lucretia Lucy Maggie Maria Marie Martha Mary Mary Jane Maud Maudie Minnie Nancy Rachel Rose Sally Sarah Sophy Susan Theresa Violet Vittoria";
+
+    var myarray = [];
+
+    myarray = fem.split(" ");
+
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+
+    //alert(random);
+
+    document.getElementById("firstname").innerHTML=random;
+
+}
+
+
+
+
+
+function lastValue()
+
+{
+
+	var lastn = "Abernetty Abrahams Acton Adair Adams Addleton Adler Agar Ainstree Akbar Aldgar Aldridge Alison Allan Allen Amberley Anderson Andrews Angel Anstruther Appledore Armitage Atkinson Atwood Backwater Bain Baker Baldwin Balmoral Barclay Bardle Barelli Barker Barnes Barnicot Barrett Barrymore Barton Baskerville Bates Baxter Baynes Becher Beddington Beddoes Bellamy Bender Bennett Bernstone Beverley Bevington Biddle Bird Blaker Blessington Blondin Blount Blymer Boarder Boone Bougureau Brackenstall Brackwell Bradley Bradshaw Bradstreet Breckinridge Brewer Brooks Brown Browner Brunton Bull Burnet Burnwell Cadogan West Cairns Calhoun Cantlemere Carère Carey Carfax Carnaway Carruthers Carter Cartwright Castalotte Cenucci Chandos Charpentier Chowdar Clarendon Clay Clayton Cobb Colin Cook Coram Cormac Cornelius Corot Coventry Coxon Crabbe Croker Crosby Crowder Cubitt Cummings Cunard Cusack Cushing Damery Danton Darbyshire Davenport Dawson deBrinvilliers deCapus deMerville DeQuincey Dennis Desmond Devine Devoy Dixie Dixon Dobney Dodd Dorak Doran Dorking Downing Dowson Drebber Dubuque Dunbar Dundas Dunn Durando Eccles Edmunds Edwards Egan Elman Emsworth Ernest Etherege Eustace Evans Fairbairn Falder Farintosh Farquhar Ferguson Ferrers Ferrier Ffolliott Flowers Fordham Forrester Fournaye Fowler Frankland Fraser Freebody Garcia Garrideb Gibson Gilchrist Gladstone Gorgiana Gorot Gottsreich Sigismond von Ormstein Gower Graham Gregory Gregson Griggs Grimm Gruner Haines-Johnson Hales Harden Harding Hardy Hare Hargrave Hargreave Harker Harold Harraway Harringby Harris Harrison Hatherley Hay Moulton Hayard Hayes Hayling Hayter Hebron Henderson Higgins Hill Hobbs Hoby Holder Holdhurst Holmes Homer Hones Hope Hopley Neligan Horner Horsom Howells Hudson Hudson Hugos Hunt Hunter Huret Huxtable Hyam Hynes Jackson Jacobs James John Johnson Jones Joseph Kemball Kemp Kent Keswick Khan Kirwan Klein Klopman Knox Kratides La Rothière Lancaster Lander Lanner Larbey Lascar Latimer Lawler LeBrun LeVillard Lee Lefevre Lestrade Lesurier Leverstoke Leverton Lewis Lexington Lomax Lopez Lothman von Saxe-Meningen Lowenstein Lucas Lucca Lucknow Lynch Lyons Maberley MacKinnon MacNamara Macphail MacPherson Manders Manse Manson Marker Martin Marvin Mason Matheson Matthews Maudsley Maupertuis Maynooth McCarthy McCauley McFarlane McGinty McGregor McLaren McMurdo McPherson Meek Melas Melville Mercer Meredith Merivale Merridew Merrilow Merrow Merryweather Merton Meunier Meyer Meyers Miles Millar Milman Milner Milverton Mitton Moffat Montgomery Montpensier Moorhouse Moran Morecroft Morgan Moriarty Morland Morphy Morris Morrison Morstan Mortimer Morton Moser Mount-James Muirhead Muller Munro Murcher Murdoch Murger Murillo Murphy Murray Musgrave Neal Neill Newton Nicholson Norberton Norlett Norton o'Groats Oakshott Oberstein Oldacre Oldmore Openshaw Overton Palmer Paramore Parker Parr Patersons Patrick Patterson Pattins Peace Perkins Persano Peters Peterson Phelps Phillimore Pierrot Pike Pinkerton Pinner Pinto Pinto Pitt Pollock Pope Porter Pott Prendergast Presbury Prescott Price Pringle Pritchard Prosper Pycroft Rae Rance Ras Reilly Reilly Reynolds Richards Ricoletti Robinson Rodney Ronder Rosa Ross Roundhay Roylott Rucastle Rudge-Whitworth Rulli Ryder Sahib Saint-Clair Saltire Sandeford Sanders Sanger Saunders Savage Sawyer Scanlan Scott Selden Shafter Sherman Shlessinger Sholto Shuman Simpson Sinclair Singh Singleford Slaney Sloane Smith Smith-Mortimer Soames Somerton Southerton Spaulding Spender St. Simon Stackhurst Stamford Stanger Stangerson Staphouse Staples Stapleton Stark Starr Staunton Steiler Steiner Stendals Stephens Sterndale Stevens Stevenson Steward Stewart Stockdale Stone Stoner Stoper Straker Straubenzee Strauss Sudbury Sutherland Sutro Sutton Swain Swindon Sylvius Tangey Tarlton Tavernier Thurston Todman Toller Tregellis Tregennis Trelawney Hope Trepoff Trevelyan Trevor Turner Tuson Underwood Upwood Vamberry VanDeher VanJansen VanSeddar VanShorst Vandeleur Vanderbilt Venner Verner Vernet Vibart VonBischoff VonBork VonHerder VonHerling VonKramm VonGrafenstein VonWaldbaum Wainwright Waldron Wallenstein Walsingham Walter Walters Wardlaw Warner Warren Warrender Watson Westaway Westbury Westphail White Whitney Whittington Wiggins Wilcox Wilder Willaby Williams Williamson Willows Wilson Windibank Windigate Windle Winter Wombwell Wood Woodhouse Woodley Worthingdon Wright Youghal Zamba";
+
+    var last = [];
+
+    last = lastn.split(" ");
+
+    var random = last[Math.floor(Math.random() * last.length)];
+
+       //alert(random);
+
+document.getElementById("lastname").innerHTML=random;
+
+}
+
+
+
+</script>
+
+
+
+
+
 </body>
+
 </html>
